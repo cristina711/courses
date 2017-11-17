@@ -1,0 +1,12 @@
+<html>
+    <head>
+        <title>Course Delete</title>
+    </head>
+    <body>
+        <h1>Are you sure you want to delete the following course?</h1>
+        <p>Name: {{course.name}}</p>
+        <p>Description: {{course.desc}} </p>
+        <a href="/"><button>NO</button></a>
+        <a href="/courseapp/{{course.id}}/delete">Yes! I want to delete this</a>
+    </body>
+</html>

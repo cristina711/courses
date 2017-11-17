@@ -1,0 +1,9 @@
+from django.conf.urls import url,include
+from . import views           
+urlpatterns = [
+  url(r'^$', views.index),
+  url(r'^create$', views.create),
+  url(r'^showremovepage/(?P<course_id>\d+)$', views.showremovepage),
+  url(r'^courseapp/(?P<course_id>\d+)/delete$', views.delete)
+
+]
